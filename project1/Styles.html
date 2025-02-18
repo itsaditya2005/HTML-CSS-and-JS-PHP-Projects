@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		project1
+	</title>
+</head>
+<body style="background-color: aqua;" link="#000" alink="#017bf5" vlink="#000">
+    
+	<br />
+	<h3 align="right">
+		<font face="cinzel" size="4">
+			<a href="project1.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="About.html">ABOUT</a> &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="contact.html">CONTACT US</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		</font>
+	</h3>
+
+<font size="7">
+    <p>Styles
+    </p>
+</font>
+
+<font size="5">
+    <p>CSS stands for Cascading Style Sheets, and is the visual language of the web. With it, we can design how HTML pages
+         look like. CSS allows us to separate between the data of the page, encoded within the HTML, and the styling of
+          the page, encoded in the CSS of the page.
+        <br><br>
+        The reason that CSS is "Cascading" is because of the way it defines which styles to use. HTML elements inherit
+         their styles in a "cascading" manner, according to a very specific set of priorities, from lowest to highest:
+        
+<ul>
+    <li>The browser default
+    </li>
+    <li>Styles defined in the page
+    </li>
+    <li>Some styles will inherit a style to their childs, for example which font to use
+    </li>
+    <li>The last rule to be defined in the loading order will be the one that will kick into effect
+    </li>
+    <li>The element selector (for example, styling all < footer > elements)
+    </li>
+    <li>The class selector (for example, styling all .main elements)
+    </li>
+    <li>The ID selector, used to select a specific element in the page
+    </li>
+    <li>Media type (explained in the Media Queries section)
+    </li>
+    <li>Defining element specific CSS using an HTML "style" attribute
+    </li>
+    <li>The !important CSS override directive (Use this directive only as a last resort)
+    </li>
+</ul>
+    In addition, there are relative "cascading" properties that can stack up relative to their parent, for example line height
+    and font size, for example the rem (relative em) CSS metric which is defined relative to the parent, or the percentage
+    unit.
+        </p>
+</font>
+
+<font size="7">
+    <p>Defining CSS
+    </p>
+</font>
+
+<font size="5">
+    <p>CSS can be defined using four methods:
+    </p>
+
+<ol>
+    <li>Inline
+    </li> <br>
+    To define a CSS style using the inline method, use the HTML style attribute:
+   
+    <img src="html23.png" alt="code" width="1250" height="300"> <br><br>
+   
+    <li>Using a CSS tag
+        </li> <br><br>
+        Defining CSS inline is not recommended at all, avoid it as much as you can. You should always define a CSS stylesheet and use selectors to apply the stylesheets. The Selectors tutorial will give a detailed tutorial on how to select HTML elements using CSS selectors.
+        <br>
+        Here is an example:
+        <img src="html24.png" alt="code" width="1250" height="500"> <br><br>
+
+    <li>Using a different stylesheet
+    </li> <br><br>
+    You can define a CSS stylesheet in an external file (usually noted with the .css extension) and load it.
+       <br> 
+    Here is an example for defining the same CSS class defined in the previous example, but in a file called "style.css".</li>
+    <img src="html25.png" alt="code" width="1250" height="125"> <br><br>
+
+    To load the CSS file, we would need to use the < link > HTML tag in the following manner: <br>
+
+    <img src="html26.png" alt="code" width="1250" height="100"> <br><br>
+
+    Please note that the stylesheet should be positioned properly relative to the HTML page. In this example, both the
+    HTML file and the CSS file would need to be in the same directory.
+    <br><br>
+    The link tag should be positioned inside the < head > section of the HTML page, like this:
+    
+    <img src="html27.png" alt="code" width="1250" height="500"> <br><br>
+
+    <li>
+        Programmatic access
+    </li> <br><br>
+
+    
+    HTML elements have the style attribute which you can use to add styles programmatically.
+    <br>
+    For example:
+    <br>
+
+    <img src="html28.png" alt="code" width="1250" height="500"> <br><br>
+
+</ol>
+
+</font>
+
+</body>
+</html>

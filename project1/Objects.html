@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		project1
+	</title>
+</head>
+<body style="background-color: aqua;" link="#000" alink="#017bf5" vlink="#000">
+    
+	<br />
+	<h3 align="right">
+		<font face="cinzel" size="4">
+			<a href="project1.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="About.html">ABOUT</a> &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="contact.html">CONTACT US</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		</font>
+	</h3> <br>
+<font size="7">
+	<p>
+        Objects
+	</p>
+</font>
+
+<font size="5">
+    <p>
+        Everything in Java is within classes and objects. Java objects hold a state, state are variables which are saved 
+        together within an object, we call them fields or member variables.
+        <br><br>
+        Let start with an example:
+        <br><br>
+        <img src="java43.png" alt="xyz" height="125" width="1290"> <br><br>
+        This class defined a point with x and y values.
+        <br><br>
+        In order to create an instance of this class, we need to use the keyword new.
+        <br><br>
+        <img src="java44.png" alt="xyz" height="100" width="1290"> <br><br>
+        In this case, we used a default constructor (constructor that doesn't get arguments) to create a Point. All classes 
+        that don't explicitly define a constructor has a default constructor that does nothing.
+        <br><br>
+        We can define our own constructor:
+        <br><br>
+        <img src="java45.png" alt="xyz" height="300" width="1290"> <br><br>
+        This means we can not longer use the default constructor new Point(). We can now only use the defined constructor
+         new Point(4, 1).
+        <br><br>
+        We can define more than one constructor, so Point can be created in several ways. Let's define the default 
+        constructor again.
+        <br><br>
+        <img src="java46.png" alt="xyz" height="350" width="1290"> <br><br>
+        Notice the usage of the this keyword here. We can use it within a constructor to call a different constructor (in order to avoid code duplication). It can only be the first line within the constructor.
+        <br><br>
+        We also used the this keyword as a reference of the current object we are running on.
+        <br><br>
+        After we defined p we can access x and y.
+        <br><br>
+        <img src="java47.png" alt="xyz" height="100" width="1290"> <br><br>
+
+    </p>
+</font>
+
+<font size="6">
+    <p>
+        Methods
+    </p>
+</font>
+
+<font size="5">
+    <p>
+        We can now define methods on Point.
+        <br><br>
+        <img src="java48.png" alt="xyz" height="350" width="1290"> <br><br>
+    </p>
+</font>
+
+<font size="6">
+    <p>
+        Public and Private
+    </p>
+</font>
+
+<font size="5">
+    <p>
+        Although we'll talk about modifiers later on, it's important to understand the different between private and 
+        public variables and methods.
+
+When using the keyword private before a variable or a method, it means only the class itself can access the variable or
+ method, when we're using public it means everybody can access it. We usually see constructors defined as public, variables defined as private and 
+ methods are separated, some public and some private.
+    </p>
+</font>

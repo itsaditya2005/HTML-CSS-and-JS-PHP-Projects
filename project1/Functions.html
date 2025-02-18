@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		project1
+	</title>
+</head>
+<body style="background-color: aqua;" link="#000" alink="#017bf5" vlink="#000">
+    
+	<br />
+	<h3 align="right">
+		<font face="cinzel" size="4">
+			<a href="project1.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="About.html">ABOUT</a> &nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="contact.html">CONTACT US</a> &nbsp;&nbsp;&nbsp;&nbsp;
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		
+		</font>
+	</h3> <br>
+<font size="7">
+	<p>
+        Functions
+	</p>
+</font>
+
+<font size="5">
+    <p>
+        In Java, all function definitions must be inside classes. We also call functions methods. Let's look at an example method
+        <br><br>
+        <img src="java33.png" alt="xyz" height="150" width="1290"> <br><br>
+        foo is a method we defined in class Main. Notice a few things about foo.
+        <br><br>
+        <ul>
+            <li>
+                static means this method belongs to the class Main and not to a specific instance of Main. Which means we can call 
+                the method from a different class like that Main.foo().
+            </li>
+            <li>
+                void means this method doesn't return a value. Methods can return a single value in Java and it has to be 
+                defined in the method declaration. However, you can use return by itself to exit the method.
+            </li>
+            <li>
+                This method doesn't get any arguments, but of course Java methods can get arguments as we'll see further on.
+            </li>
+        </ul>
+
+    </p>
+</font>
+
+<font size="6">
+    <p>
+        Arguments
+    </p>
+</font>
+
+<font>
+    <p>
+        I always like to say that arguments to Java methods are passed by value, although some might disagree with my choice of words, I find it the best way to explain and understand how it works exactly.
+        <br><br>
+        By value means that arguments are copied when the method runs. Let's look at an example.
+        <br><br>
+        <img src="java34.png" alt="xyz" height="150" width="1290"> <br><br>
+        Here is a another place in the code, where bar is called
+        <br><br>
+        <img src="java35.png" alt="xyz" height="150" width="1290"> <br><br>
+        You can picture in your head that when bar(a, b) is run, it's like in the beginning of bar the following two lines are written:
+        <br><br>
+        <img src="java36.png" alt="xyz" height="150" width="1290"> <br><br>
+        And only then the rest of the method is run.
+        <br><br>
+        This means that a value get copied to num1 and b value get copied to num2. Changing the values of num1 and num2 
+        will not affect a and b.
+        <br><br>
+        If the arguments were objects, the rules remain the same, but it acts a bit differently. Here is a an example:
+        <br><br>
+        <img src="java37.png" alt="xyz" height="150" width="1290"> <br><br>
+        And here is how we use it
+        <br><br>
+        <img src="java38.png" alt="xyz" height="150" width="1290"> <br><br>
+        Again we can picture the same two lines in the beginning of bar2
+        <br><br>
+        <img src="java39.png" alt="xyz" height="150" width="1290"> <br><br>
+        But when we assign objects, it's a bit different than assigning primitives. s1 and joe are two different 
+        references to the same object. s1 == joe is true. This means that running methods on s1 will change the object joe. But if we'll change the value of s1 as a reference, it will not affect the reference joe.
+        <br><br>
+        <img src="java40.png" alt="xyz" height="150" width="1290"> <br><br>
+
+    </p>
+</font>
+
+<font size="6">
+    <p>
+        Non static methods
+    </p>
+</font>
+
+<font size="5">
+    <p>
+        Non static methods in Java are used more than static methods. Those methods can only be run on objects and not on 
+        the whole class.
+        <br><br>
+        Non static methods can access and alter the field of the object.
+        <img src="java41.png" alt="xyz" height="250" width="1290"> <br><br>
+
+        Calling the methods will require an object of type Student.
+        <br><br>
+        <img src="java42.png" alt="xyz" height="200" width="1290"> <br><br>
+
+    </p>
+</font>
+
+<font size="5">
+<ul>
+    Summary
+    <li>
+        Every Java method has to be within a class
+    </li>
+    <li>
+        Static methods belong to a class while non-static methods belong to objects
+    </li>
+    <li>
+        All parameters to functions are passed by value, primitives content is copied, while objects are not copied and 
+        some would say 'passed by reference'
+    </li>
+</ul>
+</font>
+
+</body>
+</html>
