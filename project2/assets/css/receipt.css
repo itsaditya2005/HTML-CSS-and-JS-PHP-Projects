@@ -1,0 +1,123 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Orbitron:wght@400;600&display=swap');
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00d4ff;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Design */
+.container {
+    background-color: #fff;
+    padding: 30px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 12px;
+    border-top: 8px solid #007bff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Heading Fonts */
+h2 {
+    font-family: 'Sacramento', cursive;
+    font-size: 40px;
+    color: #ffd069;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: #007bff;
+}
+
+/* Table Design */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-color: black;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Buttons */
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button.cancel-btn {
+    background-color: #dc3545;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* Dialog Box Design */
+.dialog-box {
+    display: none;
+    position: fixed;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    max-width: 400px;
+    width: 100%;
+}
+
+.dialog-content h2 {
+    margin-top: 0;
+}
+
+.dialog-content p {
+    margin-bottom: 20px;
+}
+
+.dialog-content input {
+    width: calc(100% - 24px);
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.dialog-content button {
+    margin-top: 10px;
+}

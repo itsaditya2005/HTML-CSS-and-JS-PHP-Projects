@@ -1,0 +1,97 @@
+/*-----------------------------------*\
+  # Booking Page Styles
+\*-----------------------------------*/
+
+/* General Styling */
+body {
+    background-color: var(--cultured);
+    font-family: var(--ff-poppins);
+  }
+  
+  /* Booking Section */
+  .booking {
+    padding: 100px 20px 80px;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    color: var(--white);
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 3rem;
+    font-family: var(--ff-montserrat);
+  }
+  
+  /* Booking Form */
+  .booking-form {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 50px;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .input-group {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input {
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid var(--gainsboro);
+    font-size: 16px;
+  }
+  
+  /* Primary Button */
+  .btn-primary {
+    width: 100%;
+    background-color: var(--bright-navy-blue);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--yale-blue);
+    transform: translateY(-3px);
+  }
+  
+  /* Secondary Button (Go Back) */
+  .btn-secondary {
+    width: 100%;
+    background-color: transparent;
+    color: var(--bright-navy-blue);
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 18px;
+    cursor: pointer;
+    border: 2px solid var(--bright-navy-blue);
+    transition: 0.3s;
+  }
+  
+  .btn-secondary:hover {
+    background-color: var(--bright-navy-blue);
+    color: var(--white);
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--gunmetal);
+    color: var(--gainsboro);
+    text-align: center;
+    padding: 20px;
+  }
+  

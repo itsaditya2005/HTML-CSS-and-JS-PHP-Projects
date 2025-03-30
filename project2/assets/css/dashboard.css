@@ -1,0 +1,143 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Orbitron:wght@400;600&display=swap');
+
+.dashboard-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Welcome Message using Sacramento Font */
+.dashboard-header {
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+label{
+    font-family: 'Orbitron', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: black;
+}
+/* Total Bookings Heading using Orbitron Font */
+.dashboard-title h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: #333;
+}
+
+.dashboard-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-filter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.date-filter-form input, .date-filter-form button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.date-filter-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.date-filter-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Styling - No Changes Made */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8f8f8;
+}
+
+/* Button Styling */
+.dashboard-btn {
+    padding: 8px 12px;
+    margin: 2px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboard-btn:hover {
+    opacity: 0.8;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.dashboard-btn:not(.delete-btn) {
+    background-color: #28a745;
+}
+
+/* Delete Dialog */
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.dialog-box {
+    background-color: white;
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dialog-box h3 {
+    margin-bottom: 10px;
+}
+
+.dialog-box button {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Success Dialog */
+.success-box {
+    background-color: #28a745;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.success-box h3 {
+    margin: 0 0 10px 0;
+}
