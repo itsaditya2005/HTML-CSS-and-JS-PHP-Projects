@@ -249,12 +249,13 @@ nav ul li a{
     letter-spacing: 1px;
     font-weight: 600;
     margin-bottom: 2px;
+    margin-left: 15px;
 }
 
 .pac-details li{
     font-size: 19px;
     color: #4c4c4c;
-    margin-left: 15px;
+    margin-left: 35px;
     margin-bottom: 2px;
     list-style-type: disc;
 }
