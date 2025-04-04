@@ -1,0 +1,40 @@
+[Users]
+| id (PK)
+| name
+| email
+| password
+| phone
+| dob
+| gender
+        |
+        | 1
+        |
+        |——< has >——*
+                    |
+                 [Bookings]
+                 | booking_id (PK)
+                 | user_id (FK)
+                 | location
+                 | package
+                 | date
+                 | status
+                 | total_price
+                        |
+                        | 1
+                        |
+                        |——< has >——1
+                                    |
+                                 [Receipts]
+                                 | receipt_id (PK)
+                                 | booking_id (FK)
+                                 | issued_on
+                                 | payment_method
+                                 | amount_paid
+
+[Messages]
+| message_id (PK)
+| name
+| email
+| subject
+| message
+| submitted_at

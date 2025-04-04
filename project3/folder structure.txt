@@ -1,0 +1,19 @@
+projet4 /
+    |
+    |--css /
+    |   |
+    |   |-style.css
+    |
+    |--files /
+    |   |
+    |   |- images and logo
+    |
+    |--index.html
+    |
+    |--location.html
+    |
+    |--contact.html
+    |
+    |--about.html
+    |
+    |--register.html

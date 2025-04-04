@@ -1,0 +1,240 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&family=Orbitron:wght@400;600&display=swap');
+
+body {
+    background: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard-container {
+    margin: 20px;
+    padding-top: 30px;
+}
+
+/* Welcome Message using Sacramento Font */
+.dashboard-header {
+    font-family: 'Sacramento', cursive;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ff9800;
+}
+
+label {
+    font-family: 'Orbitron', cursive;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: #ffffff;
+}
+
+/* Total Bookings Heading using Orbitron Font */
+.dashboard-title h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px;
+    color: #ff9800;
+}
+
+.dashboard-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.date-filter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.date-filter-form input, .date-filter-form button {
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.date-filter-form button {
+    background-color: #ff9800;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+
+.date-filter-form button:hover {
+    background-color: #e07b00;
+}
+
+/* Table Styling for Dark Theme */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+th {
+    background-color: #535353;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+td {
+    background-color: #2a2a2a;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #414141;
+}
+
+tbody tr:hover {
+    background-color: #333333;
+}
+
+/* Button Styling */
+.dashboard-btn {
+    padding: 8px 12px;
+    margin: 2px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.dashboard-btn:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+}
+
+.delete-btn {
+    background-color: orange;
+}
+
+.dashboard-btn:not(.delete-btn) {
+    background-color: orange;
+}
+
+/* Dialog Overlay */
+.dialog-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Dialog Box */
+.dialog-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 380px;
+    padding: 25px 20px;
+    background: #1e1e1e;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+}
+
+/* Dialog Headings */
+.dialog-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ff9800;
+}
+
+.dialog-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+/* Dialog Buttons */
+.dialog-box button {
+    padding: 10px 18px;
+    font-size: 15px;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dialog-box #confirmDelete {
+    background-color: #f44336;
+    color: white;
+    border: none;
+}
+
+.dialog-box .delete-btn {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+}
+
+.dialog-box button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* Success Dialog Box */
+.success-box {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: white;
+    border-radius: 16px;
+    padding: 25px 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.success-box h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.success-box p {
+    font-size: 16px;
+}
+
+
+/* Rounded corners for the whole table */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Rounded corners for header */
+th:first-child {
+  border-top-left-radius: 12px;
+}
+
+th:last-child {
+  border-top-right-radius: 12px;
+}
+
+/* Rounded corners for footer row */
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
