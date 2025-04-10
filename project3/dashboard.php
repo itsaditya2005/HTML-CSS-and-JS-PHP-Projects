@@ -70,9 +70,9 @@ if (isset($_GET['from_date']) && isset($_GET['to_date'])) {
             
         <ul class="navbar">
             <li>
-                <a href="#home">Home</a>
-                <a href="#locations">Locations</a>
-                <a href="#package">Packages</a>
+                <a href="index.html#home">Home</a>
+                <a href="index.html#locations">Locations</a>
+                <a href="index.html#package">Packages</a>
                 <a href="./about.html">About Us</a>
                 <a href="./contact.html">Contact Us</a>
             </li>
